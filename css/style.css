@@ -4,3 +4,22 @@
 	margin: 0;
 	padding: 0;
 }
+
+/* LAYOUT */
+#header {
+	background-color: rgb(0, 149, 255);
+	color: white;
+}
+.container {
+	padding: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header > .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-icon {
+	font-size: 2rem;
+}
