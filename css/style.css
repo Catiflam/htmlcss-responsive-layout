@@ -29,6 +29,27 @@
 }
 .col {
 }
+#second {
+	background-color: blueviolet;
+	width: 100%;
+}
+.box-image {
+	background-color: blue;
+	width: 100%;
+	padding: 20px 20px;
+}
+.box-2-image {
+	background-color: rgb(25, 197, 40);
+	width: 100%;
+	border-radius: 20px;
+	padding: 20px 20px;
+}
+.box-image > img {
+	width: 100%;
+}
+.box-2-image > img {
+	width: 100%;
+}
 
 /* SECTION */
 #intro .col {
@@ -59,6 +80,10 @@
 	}
 	#intro .card > .card-section {
 		width: 50%;
+	}
+	#second .row {
+		display: flex;
+		justify-content: space-around;
 	}
 }
 
