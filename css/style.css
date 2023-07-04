@@ -28,26 +28,15 @@
 	margin-right: -1rem;
 }
 .col {
+	padding: 1rem;
 }
-#second {
-	background-color: blueviolet;
-	width: 100%;
-}
-.box-image {
-	background-color: blue;
-	width: 100%;
-	padding: 20px 20px;
-}
-.box-2-image {
-	background-color: rgb(25, 197, 40);
-	width: 100%;
+.card {
 	border-radius: 20px;
-	padding: 20px 20px;
 }
-.box-image > img {
-	width: 100%;
-}
-.box-2-image > img {
+
+#planning {
+	background-color: blueviolet;
+	padding: 1rem;
 	width: 100%;
 }
 
@@ -60,6 +49,9 @@
 	background-color: red;
 	width: 100%;
 	padding: 1rem;
+}
+#planning .box-content img {
+	max-width: 100%;
 }
 
 /* RESPONSIVE */
@@ -80,10 +72,6 @@
 	}
 	#intro .card > .card-section {
 		width: 50%;
-	}
-	#second .row {
-		display: flex;
-		justify-content: space-around;
 	}
 }
 
