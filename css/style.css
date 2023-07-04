@@ -33,11 +33,27 @@
 .card {
 	border-radius: 20px;
 }
+.card-media img {
+	border-radius: 50%;
+	width: 250px;
+	aspect-ratio: 1;
+}
+.button {
+	background-color: blue;
+	border-radius: 10px;
+	padding: 10 10px;
+	color: white;
+}
 
 #planning {
 	background-color: blueviolet;
 	padding: 1rem;
 	width: 100%;
+}
+#testimonials .card {
+	background-color: blueviolet;
+	width: 100%;
+	padding: 1rem;
 }
 
 /* SECTION */
@@ -46,9 +62,12 @@
 	padding: 1rem;
 }
 #intro .card {
-	background-color: red;
+	background-color: cyan;
 	width: 100%;
 	padding: 1rem;
+}
+#intro .card-section img {
+	width: 100%;
 }
 #planning .box-content img {
 	max-width: 100%;
