@@ -42,7 +42,10 @@ section{
 	padding: 1rem;
 }
 .box-content {
-	line-height: 60px;
+	line-height: 40px;
+}
+ #header i{
+	font-size: 2rem;
 }
 
 .button {
@@ -51,6 +54,7 @@ section{
 	padding: 10px 20px;
 	color: white;
 	width: 170px;
+	
 }
 
 section:nth-of-type(even).card {
@@ -69,6 +73,15 @@ section:nth-of-type(odd) .card {
 }
 
 /* SECTION */
+
+#intro .box-content {
+text-align: center;
+}
+#intro .icon{
+	font-size: 5rem;
+	text-align: center;
+
+}
 #intro .col {
 	margin: 1rem 0;
 	padding: 1rem;
