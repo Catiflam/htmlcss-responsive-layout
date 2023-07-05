@@ -4,8 +4,15 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	color: #333;
+}
 
 /* LAYOUT */
+
+section{
+	padding: 2rem;
+}
 .container {
 	max-width: 100%;
 	margin-left: auto;
@@ -32,28 +39,33 @@
 }
 .card {
 	border-radius: 20px;
+	padding: 1rem;
 }
-.card-media img {
-	border-radius: 50%;
-	width: 250px;
-	aspect-ratio: 1;
-}
-.button {
-	background-color: blue;
-	border-radius: 10px;
-	padding: 10 10px;
-	color: white;
+.box-content {
+	line-height: 60px;
 }
 
-#planning {
-	background-color: blueviolet;
-	padding: 1rem;
-	width: 100%;
+.button {
+	background-color: blue;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: white;
+	width: 170px;
 }
-#testimonials .card {
-	background-color: blueviolet;
-	width: 100%;
+
+section:nth-of-type(even).card {
+	background-color: white;
+	
+}
+
+section:nth-of-type(odd) .card {
+	background-color:white;
+	color: blueviolet;
 	padding: 1rem;
+}
+
+#benefits{
+	background-color: blueviolet;
 }
 
 /* SECTION */
@@ -63,17 +75,59 @@
 }
 #intro .card {
 	background-color: cyan;
+	color: #333;
 	width: 100%;
 	padding: 1rem;
 }
 #intro .card-section img {
 	width: 100%;
 }
+#planning .card {
+	background-color: white;
+	padding: 1rem;
+}
+#planning {
+	background-color: blueviolet;
+	padding: 1rem;
+	width: 100%;
+}
 #planning .box-content img {
 	max-width: 100%;
 }
+#planning .col:last-child {
+	display: flex;
+	align-items: flex-end;
+}
+#testimonials .card {
+	background-color: blueviolet;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+#testimonials .card-media {
+	margin: 20px auto;
+	width: 150px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	padding: 5px 5px;
+	line-height: 150px;
+	text-align: center;
 
-/* RESPONSIVE */
+} 
+#testimonials .card-media img {
+	width: 150px;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	margin: 20px auto;
+}
+#testimonials .col{
+	text-align: center;
+	padding: 10px;
+	
+}
+
+
+
+/* RESPONSIVE  TABLET*/
 @media screen and (min-width: 576px) {
 	#intro .row {
 		display: flex;
@@ -86,16 +140,40 @@
 	#intro .col:first-child {
 		width: calc(100% / 3 * 2);
 	}
+	#benefits .col{
+		width: 50%;
+	}
+	#benefits .row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#testimonials .card{
+		display: flex;
+	}
+	
+	#testimonials .card-text{
+		flex-grow: 1;
+	}
+
+}
+/* RESPONSIVE DESKTOP */
+@media screen and (min-width: 992px) {
+	.container {
+		max-width: 1180px;
+	}
 	#intro .col:first-child .card {
 		display: flex;
 	}
 	#intro .card > .card-section {
 		width: 50%;
 	}
-}
 
-@media screen and(min-width:992px) {
-	.container {
-		max-width: 1180px;
-	}
+	#planning .row {
+		display: flex;
+ }
+ #planning .col{
+	width: 50%;
+ }
+ #benefits .col{
+	width:calc(100% / 3);
 }
