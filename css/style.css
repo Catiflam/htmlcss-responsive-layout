@@ -122,7 +122,13 @@ section:nth-of-type(odd) .card {
 #testimonials .col{
 	text-align: center;
 	padding: 10px;
-	
+}
+#about .box-content img{
+	max-width: 100%;
+	border-radius: 50%;
+}
+#get-start{
+	background-color: blueviolet;
 }
 
 
@@ -153,6 +159,15 @@ section:nth-of-type(odd) .card {
 	
 	#testimonials .card-text{
 		flex-grow: 1;
+	}
+	#about .row{
+		display: flex;
+	}
+	#about .col:first-child{
+		width: 60%;
+	}
+	#about .col{
+		width: 40%;
 	}
 
 }
